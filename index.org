@@ -8,5 +8,5 @@
 
 P.S. până când aici cam bate vântul, dar cu timpul o să mai adaug lucruri interesante 😉
 
+- [[file:resurse.html][Resurse]]
 - [[file:lists.html][Liste]]
-- Nu liste
