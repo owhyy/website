@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-03-21 Mon 20:29 -->
+<!-- 2022-03-21 Mon 20:34 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>List, ArrayList, LinkedList</title>
@@ -15,22 +15,22 @@
 <div id="content" class="content">
 <h1 class="title">List, ArrayList, LinkedList</h1>
 
-<div id="outline-container-orgb5e74fa" class="outline-2">
-<h2 id="orgb5e74fa">ATENȚIE</h2>
-<div class="outline-text-2" id="text-orgb5e74fa">
+<div id="outline-container-org3f15d69" class="outline-2">
+<h2 id="org3f15d69">ATENȚIE</h2>
+<div class="outline-text-2" id="text-org3f15d69">
 <p>
 Informația de aici este doar ceea ce îmi imaginez eu în cap când mă gândesc la acest subiect. <b>E posibil ca 90% din ceea ce am scris mai jos să fie greșit.</b> Scopul acestei pagini este de a oferi o prezentare generală, foarte abstractă și pe scurt a informației.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgef82124" class="outline-2">
-<h2 id="orgef82124">Cio za ArrayList?</h2>
-<div class="outline-text-2" id="text-orgef82124">
+<div id="outline-container-org4bb9098" class="outline-2">
+<h2 id="org4bb9098">Cio za ArrayList?</h2>
+<div class="outline-text-2" id="text-org4bb9098">
 </div>
-<div id="outline-container-org54c1d21" class="outline-3">
-<h3 id="org54c1d21">Implementarea</h3>
-<div class="outline-text-3" id="text-org54c1d21">
+<div id="outline-container-org7c9a220" class="outline-3">
+<h3 id="org7c9a220">Implementarea</h3>
+<div class="outline-text-3" id="text-org7c9a220">
 <p>
 <code>List</code> - este interfața. <code>ArrayList</code> și <code>LinkedList</code> o implementează (<code>implements</code>).
 </p>
@@ -45,9 +45,9 @@ Informația de aici este doar ceea ce îmi imaginez eu în cap când mă gândes
 </div>
 </div>
 
-<div id="outline-container-orged19a51" class="outline-3">
-<h3 id="orged19a51">Ce și când folosim?</h3>
-<div class="outline-text-3" id="text-orged19a51">
+<div id="outline-container-org3b294bc" class="outline-3">
+<h3 id="org3b294bc">Ce și când folosim?</h3>
+<div class="outline-text-3" id="text-org3b294bc">
 <p>
 Folosim <code>ArrayList</code> când vrem să <b>stocăm</b> (salvăm, memorăm, citim și după accesăm etc.) date.
 </p>
@@ -58,9 +58,9 @@ Folosim <code>LinkedList</code> când vrem să <b>manipulăm</b> datele (adăug�
 </div>
 </div>
 
-<div id="outline-container-org02c5b70" class="outline-3">
-<h3 id="org02c5b70">Array static vs Lista</h3>
-<div class="outline-text-3" id="text-org02c5b70">
+<div id="outline-container-org084f8c2" class="outline-3">
+<h3 id="org084f8c2">Array static vs Lista</h3>
+<div class="outline-text-3" id="text-org084f8c2">
 <p>
 Dacă știm dinainte cât de mare va fi array-ul dinainte (capacitatea sa maximă), folosim un array static (<code>type[] a = new type[n]</code>); (cel puțin, așa ar spune regula)
 </p>
@@ -69,9 +69,9 @@ Dacă știm dinainte cât de mare va fi array-ul dinainte (capacitatea sa maxim�
 Dacă nu - folosim o listă (<code>ArrayList</code>). Cu toate acestea, eu folosesc <code>ArrayList</code> în ambele cazuri, și vă recomand s-o faceți și voi. De ce?
 </p>
 </div>
-<div id="outline-container-orga94f58b" class="outline-4">
-<h4 id="orga94f58b">Item 28: Prefer lists to arrays</h4>
-<div class="outline-text-4" id="text-orga94f58b">
+<div id="outline-container-org0929db9" class="outline-4">
+<h4 id="org0929db9">Item 28: Prefer lists to arrays</h4>
+<div class="outline-text-4" id="text-org0929db9">
 <p>
 Conform <i>Effective Java by Joshua Bloch</i>, cod precum
 </p>
@@ -101,16 +101,16 @@ El (Joshua) menționează încă o diferență, ce ține de integrarea cu generi
 </div>
 </div>
 
-<div id="outline-container-orgbeb1284" class="outline-3">
-<h3 id="orgbeb1284">Programare (aproape)funcțională și clasa <code>stream</code></h3>
-<div class="outline-text-3" id="text-orgbeb1284">
+<div id="outline-container-org8255b53" class="outline-3">
+<h3 id="org8255b53">Programare (aproape)funcțională și clasa <code>stream</code></h3>
+<div class="outline-text-3" id="text-org8255b53">
 </div>
-<div id="outline-container-org0128d10" class="outline-4">
-<h4 id="org0128d10">Funcțiile lambda</h4>
+<div id="outline-container-org1c64eeb" class="outline-4">
+<h4 id="org1c64eeb">Funcțiile lambda</h4>
 </div>
-<div id="outline-container-org00fced7" class="outline-4">
-<h4 id="org00fced7">Puțin despre programarea funcțională</h4>
-<div class="outline-text-4" id="text-org00fced7">
+<div id="outline-container-orgb020a45" class="outline-4">
+<h4 id="orgb020a45">Puțin despre programarea funcțională</h4>
+<div class="outline-text-4" id="text-orgb020a45">
 <p>
 În limbajele de programare funcțională, instrumentul de bază este (<i>ați ghicit</i>) funcția. În astfel de limbaje avem funcții care primesc funcții ca parametru, și returnează alte funcții. Java nu este un limbaj funcțional, și totuși ea (pe lângă multe alte limbaje populare astăzi) împrumută lucruri din programarea funcțională. Desigur, implementarea lor, sintaxa ș.a.m.d variază mult (sunt, până la urmă, două paradigme diferite), însă esența rămâne tot acolo (dacă îți încruntezi privirea, așa încât ochii tăi seamănă cu cei ai unui asian).
 </p>
@@ -147,17 +147,17 @@ Codul de mai sus, chiar dacă nu funcționează din punct de vedere al limbajulu
 </div>
 </div>
 
-<div id="outline-container-org35f028a" class="outline-4">
-<h4 id="org35f028a">Iteratorii</h4>
-<div class="outline-text-4" id="text-org35f028a">
+<div id="outline-container-org16561b4" class="outline-4">
+<h4 id="org16561b4">Iteratorii</h4>
+<div class="outline-text-4" id="text-org16561b4">
 <p>
 Este destul de greu de explicat ce sunt iteratorii cu cuvinte, așa că o s-o fac prin exemple. Ceea ce trebuie să țineți minte e că fiecare iterator ia ca parametri cel puțin 2 lucruri: o funcție și o colecție (o listă), asupra căreia să aplice funcția. În Java, însă, acestea iau un singur lucru (ca parametru, în orice caz), și anume funcția. Colecția este specificată deodată, atunci când folosim metoda <code>.stream()</code> pe ea.
 </p>
 </div>
 
 <ul class="org-ul">
-<li><a id="orge7ab283"></a><code>map</code><br />
-<div class="outline-text-5" id="text-orge7ab283">
+<li><a id="org50524fd"></a><code>map</code><br />
+<div class="outline-text-5" id="text-org50524fd">
 <p>
 <code>map</code> ia ca parametru o funcție, pe care o aplică fiecărui element al colecției. Rezultatul iteratorului <code>map</code> este o colecție, în care fiecare element este rezultatul aplicării funcției pe elementul colecției. În exemplul de mai jos, vom crea un nou <code>ArrayList</code>, în care fiecare element este elementul respectiv din <code>numere</code> + 1.
 </p>
@@ -196,24 +196,24 @@ Destul de greu de citit, nu-i așa? De asta, vă recomand ca atunci când folosi
 
 
 
-<div id="outline-container-org83bac13" class="outline-4">
-<h4 id="org83bac13"><span class="todo TODO">TODO</span> document better</h4>
+<div id="outline-container-orge84b717" class="outline-4">
+<h4 id="orge84b717"><span class="todo TODO">TODO</span> document better</h4>
 </div>
-<div id="outline-container-org37470e0" class="outline-4">
-<h4 id="org37470e0"><span class="todo TODO">TODO</span> add filter, reduce, forEach, sort</h4>
+<div id="outline-container-orgee8610a" class="outline-4">
+<h4 id="orgee8610a"><span class="todo TODO">TODO</span> add filter, reduce, forEach, sort</h4>
 </div>
-<div id="outline-container-org5f333ac" class="outline-4">
-<h4 id="org5f333ac"><span class="todo TODO">TODO</span> book references</h4>
+<div id="outline-container-org319cfd6" class="outline-4">
+<h4 id="org319cfd6"><span class="todo TODO">TODO</span> book references</h4>
 </div>
-<div id="outline-container-org52d3a29" class="outline-4">
-<h4 id="org52d3a29"><span class="todo TODO">TODO</span> add video recommandation</h4>
+<div id="outline-container-org575900e" class="outline-4">
+<h4 id="org575900e"><span class="todo TODO">TODO</span> add video recommandation</h4>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Babin Ion</p>
-<p class="date">Created: 2022-03-21 Mon 20:29</p>
+<p class="date">Created: 2022-03-21 Mon 20:34</p>
 </div>
 </body>
 </html>
