@@ -19,3 +19,5 @@ La momentul scrierii, învăț din [[https://web.mit.edu/6.001/6.037/sicp.pdf][S
 Aici am o grămadă de cărți. La momentul actual, învăț din /Basic Mathematics/ de Serge Lang și /Algebra/ de Gelfand. Ambele sunt cărți cu exerciții neobișnuite la care trebuie să te gândești. Ambele încep de la lucruri elementare, îți dau minimul de cunoștințe, și te pun să le aplici pe exerciții care necesită gândire. /Basic Mathematics/ include geometrie și trigonometrie, explicate, la fel, foarte succint. Nu necesită absolut nici o cunoștință matematică (poate doar tabla înmulțirii și să numeri până la 100).
 
 Cel care a creat /functionalcs/ are și un /fel de două feluri/ pentru [[https://learnaifromscratch.github.io/math.html][matematică]]. Cartea pe care el o recomandă, însă, e mult prea jostkaia pentru mine. YMMV.
+
+[[file:index.html][Înapoi]]
