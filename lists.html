@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-03-21 Mon 20:34 -->
+<!-- 2022-04-07 Thu 21:15 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>List, ArrayList, LinkedList</title>
@@ -15,22 +15,22 @@
 <div id="content" class="content">
 <h1 class="title">List, ArrayList, LinkedList</h1>
 
-<div id="outline-container-org3f15d69" class="outline-2">
-<h2 id="org3f15d69">ATENȚIE</h2>
-<div class="outline-text-2" id="text-org3f15d69">
+<div id="outline-container-org2f5ebf3" class="outline-2">
+<h2 id="org2f5ebf3">ATENȚIE</h2>
+<div class="outline-text-2" id="text-org2f5ebf3">
 <p>
 Informația de aici este doar ceea ce îmi imaginez eu în cap când mă gândesc la acest subiect. <b>E posibil ca 90% din ceea ce am scris mai jos să fie greșit.</b> Scopul acestei pagini este de a oferi o prezentare generală, foarte abstractă și pe scurt a informației.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org4bb9098" class="outline-2">
-<h2 id="org4bb9098">Cio za ArrayList?</h2>
-<div class="outline-text-2" id="text-org4bb9098">
+<div id="outline-container-org121f0be" class="outline-2">
+<h2 id="org121f0be">Cio za ArrayList?</h2>
+<div class="outline-text-2" id="text-org121f0be">
 </div>
-<div id="outline-container-org7c9a220" class="outline-3">
-<h3 id="org7c9a220">Implementarea</h3>
-<div class="outline-text-3" id="text-org7c9a220">
+<div id="outline-container-orgcb4a39d" class="outline-3">
+<h3 id="orgcb4a39d">Implementarea</h3>
+<div class="outline-text-3" id="text-orgcb4a39d">
 <p>
 <code>List</code> - este interfața. <code>ArrayList</code> și <code>LinkedList</code> o implementează (<code>implements</code>).
 </p>
@@ -45,9 +45,9 @@ Informația de aici este doar ceea ce îmi imaginez eu în cap când mă gândes
 </div>
 </div>
 
-<div id="outline-container-org3b294bc" class="outline-3">
-<h3 id="org3b294bc">Ce și când folosim?</h3>
-<div class="outline-text-3" id="text-org3b294bc">
+<div id="outline-container-org9fbd2e8" class="outline-3">
+<h3 id="org9fbd2e8">Ce și când folosim?</h3>
+<div class="outline-text-3" id="text-org9fbd2e8">
 <p>
 Folosim <code>ArrayList</code> când vrem să <b>stocăm</b> (salvăm, memorăm, citim și după accesăm etc.) date.
 </p>
@@ -58,9 +58,9 @@ Folosim <code>LinkedList</code> când vrem să <b>manipulăm</b> datele (adăug�
 </div>
 </div>
 
-<div id="outline-container-org084f8c2" class="outline-3">
-<h3 id="org084f8c2">Array static vs Lista</h3>
-<div class="outline-text-3" id="text-org084f8c2">
+<div id="outline-container-orgdf11fef" class="outline-3">
+<h3 id="orgdf11fef">Array static vs Lista</h3>
+<div class="outline-text-3" id="text-orgdf11fef">
 <p>
 Dacă știm dinainte cât de mare va fi array-ul dinainte (capacitatea sa maximă), folosim un array static (<code>type[] a = new type[n]</code>); (cel puțin, așa ar spune regula)
 </p>
@@ -69,25 +69,25 @@ Dacă știm dinainte cât de mare va fi array-ul dinainte (capacitatea sa maxim�
 Dacă nu - folosim o listă (<code>ArrayList</code>). Cu toate acestea, eu folosesc <code>ArrayList</code> în ambele cazuri, și vă recomand s-o faceți și voi. De ce?
 </p>
 </div>
-<div id="outline-container-org0929db9" class="outline-4">
-<h4 id="org0929db9">Item 28: Prefer lists to arrays</h4>
-<div class="outline-text-4" id="text-org0929db9">
+<div id="outline-container-orgcdf98c5" class="outline-4">
+<h4 id="orgcdf98c5">Item 28: Prefer lists to arrays</h4>
+<div class="outline-text-4" id="text-orgcdf98c5">
 <p>
 Conform <i>Effective Java by Joshua Bloch</i>, cod precum
 </p>
 <div class="org-src-container">
-<pre class="src src-java"><span class="org-comment-delimiter">// </span><span class="org-comment">Va esua la runtime!</span>
-<span class="org-type">Long</span>[] <span class="org-variable-name">objectArray</span> = <span class="org-keyword">new</span> <span class="org-type">Long</span>[<span class="org-highlight-numbers-number">1</span>];
-objectArray[<span class="org-highlight-numbers-number">0</span>] = <span class="org-string">"I don't fit in"</span>; <span class="org-comment-delimiter">// </span><span class="org-comment">ArrayStoreException: tipul array-ului este Long, dar memoram un String</span>
+<pre class="src src-java"><span style="color: #98be65;">// </span><span style="color: #98be65;">Va esua la runtime!</span>
+<span style="color: #DFDFDF; font-weight: bold;">Long</span>[] <span style="color: #bbc2cf;">objectArray</span> = <span style="color: #DFDFDF; font-weight: bold;">new</span> <span style="color: #DFDFDF; font-weight: bold;">Long</span>[<span style="color: #b4916d; font-weight: bold;">1</span>];
+objectArray[<span style="color: #b4916d; font-weight: bold;">0</span>] = <span style="color: #b4916d;">"I don't fit in"</span>; <span style="color: #98be65;">// </span><span style="color: #98be65;">ArrayStoreException: tipul array-ului este Long, dar memoram un String</span>
 </pre>
 </div>
 <p>
 este considerat corect (pentru că eșuează abia la runtime). Acest cod, însă
 </p>
 <div class="org-src-container">
-<pre class="src src-java"><span class="org-comment-delimiter">// </span><span class="org-comment">Nu se va compila</span>
-<span class="org-type">List</span>&lt;<span class="org-type">Long</span>&gt; <span class="org-variable-name">ll</span> = <span class="org-keyword">new</span> <span class="org-type">ArrayList</span>&lt;<span class="org-type">Long</span>&gt;(); <span class="org-comment-delimiter">// </span><span class="org-comment">tipuri incompatibile</span>
-ll.add(<span class="org-string">"I don't fit in"</span>);
+<pre class="src src-java"><span style="color: #98be65;">// </span><span style="color: #98be65;">Nu se va compila</span>
+<span style="color: #DFDFDF; font-weight: bold;">List</span>&lt;<span style="color: #DFDFDF; font-weight: bold;">Long</span>&gt; <span style="color: #bbc2cf;">ll</span> = <span style="color: #DFDFDF; font-weight: bold;">new</span> <span style="color: #DFDFDF; font-weight: bold;">ArrayList</span>&lt;<span style="color: #DFDFDF; font-weight: bold;">Long</span>&gt;(); <span style="color: #98be65;">// </span><span style="color: #98be65;">tipuri incompatibile</span>
+ll.add(<span style="color: #b4916d;">"I don't fit in"</span>);
 </pre>
 </div>
 <p>
@@ -101,16 +101,16 @@ El (Joshua) menționează încă o diferență, ce ține de integrarea cu generi
 </div>
 </div>
 
-<div id="outline-container-org8255b53" class="outline-3">
-<h3 id="org8255b53">Programare (aproape)funcțională și clasa <code>stream</code></h3>
-<div class="outline-text-3" id="text-org8255b53">
+<div id="outline-container-orgd289408" class="outline-3">
+<h3 id="orgd289408">Programare (aproape)funcțională și clasa <code>stream</code></h3>
+<div class="outline-text-3" id="text-orgd289408">
 </div>
-<div id="outline-container-org1c64eeb" class="outline-4">
-<h4 id="org1c64eeb">Funcțiile lambda</h4>
+<div id="outline-container-orgee43c5d" class="outline-4">
+<h4 id="orgee43c5d">Funcțiile lambda</h4>
 </div>
-<div id="outline-container-orgb020a45" class="outline-4">
-<h4 id="orgb020a45">Puțin despre programarea funcțională</h4>
-<div class="outline-text-4" id="text-orgb020a45">
+<div id="outline-container-org9a03e55" class="outline-4">
+<h4 id="org9a03e55">Puțin despre programarea funcțională</h4>
+<div class="outline-text-4" id="text-org9a03e55">
 <p>
 În limbajele de programare funcțională, instrumentul de bază este (<i>ați ghicit</i>) funcția. În astfel de limbaje avem funcții care primesc funcții ca parametru, și returnează alte funcții. Java nu este un limbaj funcțional, și totuși ea (pe lângă multe alte limbaje populare astăzi) împrumută lucruri din programarea funcțională. Desigur, implementarea lor, sintaxa ș.a.m.d variază mult (sunt, până la urmă, două paradigme diferite), însă esența rămâne tot acolo (dacă îți încruntezi privirea, așa încât ochii tăi seamănă cu cei ai unui asian).
 </p>
@@ -123,9 +123,9 @@ Ceea ce ne apropie de programarea funcțională este <code>stream</code>. Nu șt
 O funcție lambda e pur și simplu o funcție fără nume. Să presupunem că avem codul următor:
 </p>
 <div class="org-src-container">
-<pre class="src src-java"><span class="org-keyword">public</span> <span class="org-type">int</span> <span class="org-function-name">sum</span>(<span class="org-type">int</span> <span class="org-variable-name">a</span>, <span class="org-type">int</span> <span class="org-variable-name">b</span>) { <span class="org-keyword">return</span> a + b; }
-<span class="org-keyword">public</span> <span class="org-type">void</span> <span class="org-function-name">afiseazaSumaDouaNumere</span>() {
-    System.out.println(sum(<span class="org-highlight-numbers-number">3</span>, <span class="org-highlight-numbers-number">5</span>));
+<pre class="src src-java"><span style="color: #DFDFDF; font-weight: bold;">public</span> <span style="color: #DFDFDF; font-weight: bold;">int</span> <span style="color: #DFDFDF; font-weight: bold;">sum</span>(<span style="color: #DFDFDF; font-weight: bold;">int</span> <span style="color: #bbc2cf;">a</span>, <span style="color: #DFDFDF; font-weight: bold;">int</span> <span style="color: #bbc2cf;">b</span>) { <span style="color: #DFDFDF; font-weight: bold;">return</span> a + b; }
+<span style="color: #DFDFDF; font-weight: bold;">public</span> <span style="color: #DFDFDF; font-weight: bold;">void</span> <span style="color: #DFDFDF; font-weight: bold;">afiseazaSumaDouaNumere</span>() {
+    System.out.println(sum(<span style="color: #b4916d; font-weight: bold;">3</span>, <span style="color: #b4916d; font-weight: bold;">5</span>));
 }
 </pre>
 </div>
@@ -135,8 +135,8 @@ Desigur, nimeni treaz la cap nu scrie astfel de cod (dacă vrei să afișezi câ
 </p>
 
 <div class="org-src-container">
-<pre class="src src-java"><span class="org-keyword">public</span> <span class="org-type">void</span> <span class="org-function-name">afiseazaSumaDouaNumere</span>() {
-    System.out.println((<span class="org-highlight-numbers-number">3</span>, <span class="org-highlight-numbers-number">5</span>) -&gt; {<span class="org-keyword">return</span> <span class="org-highlight-numbers-number">3</span> + <span class="org-highlight-numbers-number">5</span>;}); <span class="org-comment-delimiter">// </span><span class="org-comment">ia ca parametri doua numere oricare, returneaza suma</span>
+<pre class="src src-java"><span style="color: #DFDFDF; font-weight: bold;">public</span> <span style="color: #DFDFDF; font-weight: bold;">void</span> <span style="color: #DFDFDF; font-weight: bold;">afiseazaSumaDouaNumere</span>() {
+    System.out.println((<span style="color: #b4916d; font-weight: bold;">3</span>, <span style="color: #b4916d; font-weight: bold;">5</span>) -&gt; {<span style="color: #DFDFDF; font-weight: bold;">return</span> <span style="color: #b4916d; font-weight: bold;">3</span> + <span style="color: #b4916d; font-weight: bold;">5</span>;}); <span style="color: #98be65;">// </span><span style="color: #98be65;">ia ca parametri doua numere oricare, returneaza suma</span>
 }
 </pre>
 </div>
@@ -147,24 +147,24 @@ Codul de mai sus, chiar dacă nu funcționează din punct de vedere al limbajulu
 </div>
 </div>
 
-<div id="outline-container-org16561b4" class="outline-4">
-<h4 id="org16561b4">Iteratorii</h4>
-<div class="outline-text-4" id="text-org16561b4">
+<div id="outline-container-org1460564" class="outline-4">
+<h4 id="org1460564">Iteratorii</h4>
+<div class="outline-text-4" id="text-org1460564">
 <p>
 Este destul de greu de explicat ce sunt iteratorii cu cuvinte, așa că o s-o fac prin exemple. Ceea ce trebuie să țineți minte e că fiecare iterator ia ca parametri cel puțin 2 lucruri: o funcție și o colecție (o listă), asupra căreia să aplice funcția. În Java, însă, acestea iau un singur lucru (ca parametru, în orice caz), și anume funcția. Colecția este specificată deodată, atunci când folosim metoda <code>.stream()</code> pe ea.
 </p>
 </div>
 
 <ul class="org-ul">
-<li><a id="org50524fd"></a><code>map</code><br />
-<div class="outline-text-5" id="text-org50524fd">
+<li><a id="org821ca9b"></a><code>map</code><br />
+<div class="outline-text-5" id="text-org821ca9b">
 <p>
 <code>map</code> ia ca parametru o funcție, pe care o aplică fiecărui element al colecției. Rezultatul iteratorului <code>map</code> este o colecție, în care fiecare element este rezultatul aplicării funcției pe elementul colecției. În exemplul de mai jos, vom crea un nou <code>ArrayList</code>, în care fiecare element este elementul respectiv din <code>numere</code> + 1.
 </p>
 <div class="org-src-container">
-<pre class="src src-java"><span class="org-type">ArrayList</span>&lt;<span class="org-type">Integer</span>&gt; <span class="org-variable-name">numere</span> = <span class="org-keyword">new</span> <span class="org-type">ArrayList</span>&lt;&gt;(List.of(<span class="org-highlight-numbers-number">1</span>,<span class="org-highlight-numbers-number">2</span>,<span class="org-highlight-numbers-number">5</span>,<span class="org-highlight-numbers-number">9</span>,<span class="org-highlight-numbers-number">11</span>,<span class="org-highlight-numbers-number">4</span>,<span class="org-highlight-numbers-number">7</span>,<span class="org-highlight-numbers-number">2</span>));
+<pre class="src src-java"><span style="color: #DFDFDF; font-weight: bold;">ArrayList</span>&lt;<span style="color: #DFDFDF; font-weight: bold;">Integer</span>&gt; <span style="color: #bbc2cf;">numere</span> = <span style="color: #DFDFDF; font-weight: bold;">new</span> <span style="color: #DFDFDF; font-weight: bold;">ArrayList</span>&lt;&gt;(List.of(<span style="color: #b4916d; font-weight: bold;">1</span>,<span style="color: #b4916d; font-weight: bold;">2</span>,<span style="color: #b4916d; font-weight: bold;">5</span>,<span style="color: #b4916d; font-weight: bold;">9</span>,<span style="color: #b4916d; font-weight: bold;">11</span>,<span style="color: #b4916d; font-weight: bold;">4</span>,<span style="color: #b4916d; font-weight: bold;">7</span>,<span style="color: #b4916d; font-weight: bold;">2</span>));
 
-<span class="org-type">ArrayList</span>&lt;<span class="org-type">Integer</span>&gt; <span class="org-variable-name">numereNou</span> = (<span class="org-type">ArrayList</span>&lt;<span class="org-type">Integer</span>&gt;) numere.stream().map(element -&gt; element = element + <span class="org-highlight-numbers-number">1</span>).collect(Collectors.toList());
+<span style="color: #DFDFDF; font-weight: bold;">ArrayList</span>&lt;<span style="color: #DFDFDF; font-weight: bold;">Integer</span>&gt; <span style="color: #bbc2cf;">numereNou</span> = (<span style="color: #DFDFDF; font-weight: bold;">ArrayList</span>&lt;<span style="color: #DFDFDF; font-weight: bold;">Integer</span>&gt;) numere.stream().map(element -&gt; element = element + <span style="color: #b4916d; font-weight: bold;">1</span>).collect(Collectors.toList());
 </pre>
 </div>
 
@@ -173,10 +173,10 @@ Destul de greu de citit, nu-i așa? De asta, vă recomand ca atunci când folosi
 </p>
 
 <div class="org-src-container">
-<pre class="src src-java"><span class="org-type">ArrayList</span>&lt;<span class="org-type">Integer</span>&gt; <span class="org-variable-name">numereNou</span> =
-                (<span class="org-type">ArrayList</span>&lt;<span class="org-type">Integer</span>&gt;) numere.stream()           <span class="org-comment-delimiter">// </span><span class="org-comment">(1)</span>
-                        .map(element -&gt; element = element + <span class="org-highlight-numbers-number">1</span>) <span class="org-comment-delimiter">// </span><span class="org-comment">(2)</span>
-                        .collect(Collectors.toList());         <span class="org-comment-delimiter">// </span><span class="org-comment">(3)</span>
+<pre class="src src-java"><span style="color: #DFDFDF; font-weight: bold;">ArrayList</span>&lt;<span style="color: #DFDFDF; font-weight: bold;">Integer</span>&gt; <span style="color: #bbc2cf;">numereNou</span> =
+                (<span style="color: #DFDFDF; font-weight: bold;">ArrayList</span>&lt;<span style="color: #DFDFDF; font-weight: bold;">Integer</span>&gt;) numere.stream()           <span style="color: #98be65;">// </span><span style="color: #98be65;">(1)</span>
+                        .map(element -&gt; element = element + <span style="color: #b4916d; font-weight: bold;">1</span>) <span style="color: #98be65;">// </span><span style="color: #98be65;">(2)</span>
+                        .collect(Collectors.toList());         <span style="color: #98be65;">// </span><span style="color: #98be65;">(3)</span>
 </pre>
 </div>
 
@@ -189,31 +189,34 @@ Destul de greu de citit, nu-i așa? De asta, vă recomand ca atunci când folosi
 <li><code>.map(element -&gt; element = element + 1)</code> - Apelul funcției <code>.map()</code> cu o lambda, care ia un argument și îi adaugă 1. Această funcție va crea o listă nouă, în care fiecare element este elemenmtul din lista <code>numere</code> + 1. O să accentuez faptul că <code>.map(...)</code> <b>nu modifică lista numere, ci creează o listă nouă</b>.</li>
 <li><code>.collect(Collectors.toList())</code> - ceea ce transformă rezultatul aplicării <code>map</code>-ului într-o listă. Nu știu prea bine cum funcționează, dar presupun că <code>map</code> nu crează obiectul propriu-zis, ci îl păstrează în memorie, iar <code>.collect()</code> îl ia din memorie și îl transformă în valoare.</li>
 </ol>
+
+
+<p>
+<a href="index.html">Înapoi</a>
+</p>
 </div>
 </li>
 </ul>
 </div>
 
-
-
-<div id="outline-container-orge84b717" class="outline-4">
-<h4 id="orge84b717"><span class="todo TODO">TODO</span> document better</h4>
+<div id="outline-container-orga344863" class="outline-4">
+<h4 id="orga344863"><span class="todo TODO">TODO</span> document better</h4>
 </div>
-<div id="outline-container-orgee8610a" class="outline-4">
-<h4 id="orgee8610a"><span class="todo TODO">TODO</span> add filter, reduce, forEach, sort</h4>
+<div id="outline-container-org7e831d8" class="outline-4">
+<h4 id="org7e831d8"><span class="todo TODO">TODO</span> add filter, reduce, forEach, sort</h4>
 </div>
-<div id="outline-container-org319cfd6" class="outline-4">
-<h4 id="org319cfd6"><span class="todo TODO">TODO</span> book references</h4>
+<div id="outline-container-org1ad816e" class="outline-4">
+<h4 id="org1ad816e"><span class="todo TODO">TODO</span> book references</h4>
 </div>
-<div id="outline-container-org575900e" class="outline-4">
-<h4 id="org575900e"><span class="todo TODO">TODO</span> add video recommandation</h4>
+<div id="outline-container-org8e7c808" class="outline-4">
+<h4 id="org8e7c808"><span class="todo TODO">TODO</span> add video recommandation</h4>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Babin Ion</p>
-<p class="date">Created: 2022-03-21 Mon 20:34</p>
+<p class="date">Created: 2022-04-07 Thu 21:15</p>
 </div>
 </body>
 </html>
