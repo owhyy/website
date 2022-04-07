@@ -2,9 +2,9 @@
 #+AUTHOR: Babin Ion
 #+LANGUAGE: ro
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="imagine.css" />
-#+OPTIONS: num:nil html-style:nil
+#+OPTIONS: num:nil html-style:nil toc:nil
 
-* Caracterizarea personajului Felix din romanul Engigma Otiliei
+* Caracterizarea personajului Felix din romanul Enigma Otiliei
 Felix este protagonistul romanului Enigma Otiliei. Spre diferență de restul personajelor, acesta nu reprezintă o tipologie umană, ci un amestec din acestea. Romanul descrie progresia acestuia, dintr-un adolescent naiv, într-o persoană completă, atât pe plan profesional (își atinge scopul și ajunge medic), cât și pe plan personal. Felix este singurul exemplu pozitiv - singurul personaj ambițios și nepasionat de bani. Antiteza cu celelalte personaje accentuează doar vanitatea acestora, ele reprezentând doar niște nulități atunci când sunt comparate chiar și cu un tânăr inocent și lipsit de experiență ca Felix.
 
 Caracterizarea directă de la începutul romanului îl descriu ca pe o persoană slabă și plăpândă: „fața îi era juvenilă și prelungă, aproape feminină”, caracterizare care vine să accentueze, prin antiteză, cât de mult progresează acesta spre sfârșitul romanului. Portretul fizic al acestuia devine astfel o fereastră spre portretul moral al acestuia.
