@@ -1,0 +1,42 @@
+#+TITLE: Cio za Github
+#+AUTHOR: Babin Ion
+#+LANGUAGE: ro
+#+LATEX_HEADER: \usepackage[AUTO]{babel}
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="imagine.css" />
+#+OPTIONS: num:nil html-style:nil
+
+* De unde și până unde
+Github este un site pe care poți încărca codul tău. Fix același lucru îl facem când încărcăm ceva pe drive, sau pe moodle (întâi, desigur, punem în pdf). \\
+Cred că e evident de ce e bine să încarci undeva codul, dar dacă nu, imaginează-ți că într-o zi îți ia foc casa sau cineva îți fură laptopul. Pa pa labolatoare, teme pentru acasă, lucruri individuale... Pricolina, nu-i așa? \\
+Ei bine, asta nu-i tot. Github mai are încă o fișkă:
+* Fișka
+Colabolarea. Încarci codul tău. Oricine poate să se uite la el, să se pricalească de cât de greșit e, sau să se închine la cât de frumos și elegant e. Oricine poate, de asemenea, să ia codul tău greșit și urât, și să-l transforme într-unul ciotkii, să-ți arate ție ce a schimbat, și, dacă crezi că e mai bine - poți accepta schimbările, și codul tău vechi se unește cu cel nou al cuiva.
+** Fișka numărul 2
+Ok. Cineva a schimbat ceva în „mai bine”. Ție ți-a fost cam lene să te uiți peste cod, așa că pur și simplu ai acceptat schimbările. A doua zi, încerci să pornești programul, dar el nu merge. Da ieri mergea. Ce-i de făcut? Ei bine, github are grijă și de această situație. Fiecare schimbare acceptată este salvată în istorie, și poți liber să-ți întorci programul la starea la care a fost ieri (ceea ce nu poți face pe drive, de exemplu).
+* Cui trebuie să îmi vând sufletul pentru această maghie?
+Github-ul este în un lucru complex. Sunt o mulțime de lucruri pe care le poți face, o grămadă de lucruri de învățat și vseo takoe. 90% din timp, însă, vei folosi 3-4 comenzi, sau, dacă folosești versiunea cu interfață grafică, vapșe nici o comandă - pur și simplu vei da click pe niște butone. De asta, o să scriu aici doar despre esențialul esențial. Restul se găsește foarte ușor pe google, youtube...
+** Începutul
+/Notă: mai jos sunt instrucțiunile pentru crearea unei repozitorii prin terminal/comandline/командная строка, și nu pentru Github Desktop. Procesul e mai mult sau mai puțin același, dar recomand măcar să încreci să repeți procesul pe terminal, chiar dacă mai apoi vei prefera să folosești Github Desktop./
+În primul rând, intri pe github.com și îți faci un cont. Fiecare utilizator are *repozitoriile* sale. O repozitorie e ca o mapă pe google drive, doar că e formată din cod. Defapt, poți încărca pdf-uri și pe github, doar că nu e sens s-o faci (nu are sens să pui codul în pdf, și după să-l încarci, asta am în vedere; există momente în care va fi nevoie să încarci pdf-uri). \\
+Pentru a crea o repozitorie, poți intra pe pagina principală > profilul tău > /Your repositories/ > /New/. Îți va apărea așa o fereastră.
+
+[[./repo-creation.png]]
+
+Fiecare repository are structura *numele_profilului/numele_repozitoriului*. De aici îl poți alege. De asemenea, poți adăuga o mică descriere, poți face repository-ul public sau privat, poți adăuga un =README= (tot un fel de descriere), un =.gitignore= (explic mai târziu) sau o licență (n-am folosit asta vreodată, dar poate fi folositoare în proiecte mai mari).\\
+Acum va apărea așa o fereastră:
+
+[[./repo-creation2.png]]
+
+** Initializarea unei repozitorii
+Repozitoria e creată, rămâne doar să adaugi fișiere. Asta se face într-un mod foarte intuitiv: ai o mapă pe calculator, în care adaugi fișiere. Această „mapă” o obții scriind următoarea comandă în terminal:
+#+begin_src bash
+git clone https://github.com/owhyy/denumirea_repozitoriei
+#+end_src
+
+Asta o sa /cloneze/ (copie, downloadeze) repozitoria într-o mapă cu denumirea repozitoriuliu tău. Dacă în ea deja existau fișiere, asta o să le descarce și pe ele. =git clone= este una din comenzile de bază pe care o să le folosim.
+
+Prima oară când creăm o repozitorie, această mapă va fi goală. Hai să adaugăm un fișier random. Eu voi adăuga un fisier numit =fisier.txt=, cu primul vers dintr-o poezie ciotkaia: =Молчи, скрывайся и таи=. Hai acum să-l adăugăm pe github.
+
+Primul lucru pe care trebuie să-l facem este să adăugăm
+
+Pentru asta, folosim un lucru numit /commit/. Un /commit/ face un fel de copie a repozitoriei tale la un moment actual.

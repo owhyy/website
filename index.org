@@ -12,3 +12,4 @@ P.S. până când aici cam bate vântul, dar cu timpul o să mai adaug lucruri i
 - [[file:lists.html][Liste]]
 - [[file:geografia.html][Notițe Geografia Mondială]]
 - [[file:istoria.html][Notițe Istorie]]
+- [[file:cio_za_github.hmtl][Cio za Github]]

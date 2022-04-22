@@ -186,7 +186,13 @@
 Import: mașini, utilaje și echipament industrial, mijloace de transport. \\
 
 *** Australia. Uniunea Australiană
-1. Este scăldată din toate părțile. Nu are vecini deloc. Acest lucru e atât bine (poate să se concentreze pe probeleme interne etc etc), cât și rău (cam greu să dezvolte relații economice, diplomatice). \\
-   TO BE CONTINUED
+1. Are ieșire la Oceanul Indian și la Oceanul Pacific. Nu are vecini. Acest lucru e atât bine (poate să se concentreze pe probeleme interne etc etc), cât și rău (cam greu să dezvolte relații economice, diplomatice).\\
+2. Climat tropical. Subsol bogat in resurse minerale. Soluri foarte fertile. \\
+3. Stat slab-populat, spor natural scăzut(0.6%/an) 89% este urbanizată.\\
+4. Ramura principala a industriei este cea extractivă. Producția este destinată exportului. Industria energetică se dezvoltă datorită centralelor termoelectrice. Este bine-dezvoltată industria metalelor neferoase, cea constructoare de mașini și utilaje (pentru industria extractivă) \\
+5. Creșterea animalelor este ramura principala a agriculturii. Se cresc, in principal bovine și ovine. Din plante se cultivă cereale și plante tehnice. \\
+6. Transportul principal este cel rutier (pentru pasageri) și cel maritim (pentru mărfuri) \\
+7. Import: produse chimice, mașini și utilaje industriale; \\
+Export: produse agro-industriale, minereuri, lână. \\
 
 [[file:index.html][Înapoi]]
