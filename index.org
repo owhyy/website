@@ -4,7 +4,7 @@
 #+OPTIONS: num:nil toc:nil html-style:nil
 
 * Ce-i asta?
-"asta" e o încercare de-a mea să explic cât de bine pot câteva din lucrurile pe care le știu (sau nu). Astfel, pot să învăț și eu, și cei care citesc.
+"asta" e o încercare de-a [[https://github.com/owhyy][mea]] să explic cât de bine pot câteva din lucrurile pe care le știu (sau nu). Astfel, pot să învăț și eu, și cei care citesc.
 
 P.S. până când aici cam bate vântul, dar cu timpul o să mai adaug lucruri interesante 😉
 
@@ -12,4 +12,4 @@ P.S. până când aici cam bate vântul, dar cu timpul o să mai adaug lucruri i
 - [[file:lists.html][Liste]]
 - [[file:geografia.html][Notițe Geografia Mondială]]
 - [[file:istoria.html][Notițe Istorie]]
-- [[file:cio_za_github.hmtl][Cio za Github]]
+- [[file:cio_za_github.html][Cio za Github]]
