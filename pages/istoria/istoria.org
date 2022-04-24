@@ -1,7 +1,7 @@
 #+TITLE: Notițe Istorie
 #+AUTHOR: Babin Ion
 #+LANGUAGE: ro
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="imagine.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../imagine.css" />
 #+OPTIONS: num:nil html-style:nil
 
 * Mica unire
@@ -36,4 +36,4 @@
 ** Politica țarismului rus în Basarabia de după 1812
 - Are loc rusificarea: aducerea altor naționalități pentru diminuarea populației băștinașe, introducerea limbii ruse în școli etc.
 
-[[file:index.html][Înapoi]]
+[[file:../../index.html][Înapoi]]

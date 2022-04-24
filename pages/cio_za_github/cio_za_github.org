@@ -2,7 +2,7 @@
 #+AUTHOR: Babin Ion
 #+LANGUAGE: ro
 #+LATEX_HEADER: \usepackage[AUTO]{babel}
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="imagine.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../imagine.css" />
 #+OPTIONS: num:nil html-style:nil
 
 * De unde și până unde
@@ -147,4 +147,4 @@ Asta a fost tot ce trebuie să știi pentru a putea adăuga fișiere pe github. 
 
 P.S. dacă ai găsit vre-o eroare în text sau în cod - deschide un /issue/ (citește și despre asta), sau, dacă pream tare vrei - poți face un PR. Profilul meu de github îl găsești pe pagina principală.
 
-[[file:index.html][Înapoi]]
+[[file:../../index.html][Înapoi]]

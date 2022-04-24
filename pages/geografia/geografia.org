@@ -8,7 +8,7 @@
 :PROPERTIES:
 #+TITLE: Notițe la tema „Geografia Mondială”
 #+EXPORT_AUTHOR: Babin Ion
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="imagine.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../imagine.css" />
 #+OPTIONS: num:nil html-style:nil
 :END:
 *** Algoritmul de caracterizarea a unui stat:
@@ -195,4 +195,4 @@ Import: mașini, utilaje și echipament industrial, mijloace de transport. \\
 7. Import: produse chimice, mașini și utilaje industriale; \\
 Export: produse agro-industriale, minereuri, lână. \\
 
-[[file:index.html][Înapoi]]
+[[file:../../index.html][Înapoi]]
