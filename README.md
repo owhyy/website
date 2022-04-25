@@ -8,6 +8,7 @@ If you see any errors - grammar or code, have any suggestions or want to contrib
 
 ### Adding new stuff
 *This only applies to college-related notes; I won't add random stuff to my page*
+
 If you want to add new stuff, it:
 1. has to be in [org](orgmode.org/)
 2. has to be in the `pages/<filename>/` folder
