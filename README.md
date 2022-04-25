@@ -1,10 +1,13 @@
 # Oleacă profesor
-This is the repository for [my website](babinion.xyz), on which I talk about random computer-science related stuff (but not limited to) as well as I can, while trying to be funny. If you see any errors - grammar or code, have any suggestions or want to contribute, please open a issue.
+This is the repository for [my website](babinion.xyz), on which I talk about random computer-science related stuff as well as I can, while trying to be funny. I also have some college notes (which you can complete, if you wish).
 
 ## How can I help?
 You can contribute in multiple ways: simply sharing the site with people that might be interested, checking the text and code for errors, fixing dead links, adding new stuff, or checking the [todo](todos.md) file.
 
+If you see any errors - grammar or code, have any suggestions or want to contribute, please open a issue.
+
 ### Adding new stuff
+*This only applies to college-related notes; I won't add random stuff to my page*
 If you want to add new stuff, it:
 1. has to be in [org](orgmode.org/)
 2. has to be in the `pages/<filename>/` folder
