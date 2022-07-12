@@ -7,16 +7,22 @@
 /* Variables. Feel free to edit these! */
 :root {
   --color-primary: #848fa5;
+  --color-secondary: #4c4c47;
   --color-black: #2d2d2a;
-  --color-gray: #4c4c47;
   --color-white: #e5dcc5;
-  --color-secondary: #c14953;
   --color-special-todo: #c14953;
+  /* TODO: add better highlighting for code highlighting*/
+  /* TODO: also fix code background being too long*/
   --color-code-comment: #c5efcb;
+
+  --color-h2: #3454d1;
+  --color-h3: #34d1bf;
+  --color-h4: #f4d35e;
+  --color-h5: #f26430;
 
   --font-primary: "Raleway", sans-serif;
   --font-headings: "Playfair Display", serif;
-  --font-monospaced: "IBM Plex Monoe", monospace;
+  --font-monospaced: "IBM Plex Mono", monospace;
 
   --font-size-1: 2.488rem;
   --font-size-2: 2.074rem;
@@ -95,19 +101,36 @@ h6 {
   font-family: var(--font-headings);
 }
 
-/* Scaled font sizes */
+/* Scaled font sizes and other styling */
 h1 {
   font-size: var(--font-size-1);
-  background-color: var(--color-gray);
+  background-color: var(--color-secondary);
+}
+
+h2::before {
+  content: "# ";
+  color: var(--color-h2);
 }
 h2 {
   font-size: var(--font-size-2);
 }
+h3::before {
+  content: "## ";
+  color: var(--color-h3);
+}
 h3 {
   font-size: var(--font-size-3);
 }
+h4::before {
+  content: "### ";
+  color: var(--color-h4);
+}
 h4 {
   font-size: var(--font-size-4);
+}
+h5::before {
+  content: "#### ";
+  color: var(--color-h5);
 }
 h5 {
   font-size: var(--font-size-5);
@@ -142,7 +165,7 @@ img {
 pre {
   font-family: var(--font-monospaced);
   font-size: var(--font-size-small);
-  background-color: var(--color-gray);
+  background-color: var(--color-secondary);
   max-width: 100%;
   overflow-x: auto;
 }
@@ -152,7 +175,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: -.5em;
+  margin-bottom: -0.5em;
 }
 
 .outline-2 p {
@@ -259,8 +282,8 @@ p {
 /*Table of content styling*/
 [role="doc-toc"] h2 {
   padding-left: calc(max(1rem, 10%) - 1rem);
-  margin-bottom: -.5em;
-  padding-bottom: .5em;
+  margin-bottom: -0.5em;
+  padding-bottom: 0.5em;
 }
 
 [role="doc-toc"] div {
