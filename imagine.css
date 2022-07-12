@@ -1,23 +1,28 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 /* Variables. Feel free to edit these! */
 :root {
-  --color-primary: #848FA5;
-  --color-black: #2D2D2A;
-  --color-white: #E5DCC5;
-  --color-secondary: #C14953;
-  --color-special-todo: #C14953;
+  --color-primary: #848fa5;
+  --color-black: #2d2d2a;
+  --color-gray: #4c4c47;
+  --color-white: #e5dcc5;
+  --color-secondary: #c14953;
+  --color-special-todo: #c14953;
+  --color-code-comment: #c5efcb;
 
   --font-primary: "Raleway", sans-serif;
   --font-headings: "Playfair Display", serif;
+  --font-monospaced: "IBM Plex Monoe", monospace;
 
   --font-size-1: 2.488rem;
   --font-size-2: 2.074rem;
   --font-size-3: 1.728rem;
-  --font-size-4: 1.44rem;
+  --font-size-4: 1.34rem;
+  --font-size-5: 1.22rem;
 
   --font-size-small: 0.95rem;
   --font-size-normal: 1.1rem;
@@ -93,6 +98,7 @@ h6 {
 /* Scaled font sizes */
 h1 {
   font-size: var(--font-size-1);
+  background-color: var(--color-gray);
 }
 h2 {
   font-size: var(--font-size-2);
@@ -100,14 +106,11 @@ h2 {
 h3 {
   font-size: var(--font-size-3);
 }
-h3 {
-  font-size: var(--font-size-4);
-}
 h4 {
   font-size: var(--font-size-4);
 }
 h5 {
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-5);
 }
 
 h1 > .subtitle {
@@ -126,6 +129,7 @@ h1 > .subtitle {
 
 .title {
   padding: 2vh 5vw;
+  margin-bottom: 1em;
 }
 
 /* Responsive images */
@@ -136,15 +140,27 @@ img {
 
 /* Responsive code blocks and tables */
 pre {
-  font-family: "Courier New", monospace;
+  font-family: var(--font-monospaced);
   font-size: var(--font-size-small);
-  background-color: #4C4C47;
+  background-color: var(--color-gray);
   max-width: 100%;
   overflow-x: auto;
 }
 
+.outline-2 h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: -.5em;
+}
+
+.outline-2 p {
+  margin-top: 0em;
+}
+
 .outline-2 {
-  padding: 2vh calc(max(1rem, 10%) - 1rem);
+  padding-left: calc(max(1rem, 10%) - 1rem);
 }
 
 /* Code blocks */
@@ -157,12 +173,12 @@ pre {
 }
 
 .org-comment {
-  color: #C5EFCB;
+  color: var(--color-code-comment);
   font-style: italic;
 }
 
 .org-comment-delimiter {
-  color: #C5EFCB;
+  color: var(--color-code-comment);
   font-style: italic;
 }
 
@@ -225,7 +241,7 @@ p {
   padding: 4px 10px;
   margin: 0;
   box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.08),
-              0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
 }
 
 .underline {
@@ -234,7 +250,23 @@ p {
 
 .outline-text-2,
 .outline-text-3,
-outline-text-4 {
+.outline-text-4,
+.outline-text-5 {
   max-width: 100%;
   overflow-x: auto;
+}
+
+/*Table of content styling*/
+[role="doc-toc"] h2 {
+  padding-left: calc(max(1rem, 10%) - 1rem);
+  margin-bottom: -.5em;
+  padding-bottom: .5em;
+}
+
+[role="doc-toc"] div {
+  padding-left: calc(max(1rem, 10%) - 1rem);
+}
+
+[role="doc-toc"] ul {
+  margin-top: 0em;
 }
