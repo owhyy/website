@@ -3,7 +3,7 @@
 #+LANGUAGE: ro
 #+LATEX_HEADER: \usepackage[AUTO]{babel}
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../imagine.css" />
-#+OPTIONS: num:nil html-style:nil
+#+OPTIONS: num:nil toc:nil html-style:nil html-postamble:""
 
 * De unde și până unde
 Github este un site pe care poți încărca codul tău. Fix același lucru îl facem când încărcăm ceva pe drive, sau pe moodle (întâi, desigur, punem în pdf). \\

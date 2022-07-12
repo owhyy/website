@@ -2,15 +2,11 @@
 #+AUTHOR: Babin Ion
 #+LANGUAGE: ro
 #+LATEX_HEADER: \usepackage[AUTO]{babel}
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../imagine.css" />
+#+OPTIONS: num:nil toc:nil html-style:nil html-postamble:""
 
 * Notițe
 ** Geografia Mondială
-:PROPERTIES:
-#+TITLE: Notițe la tema „Geografia Mondială”
-#+EXPORT_AUTHOR: Babin Ion
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../imagine.css" />
-#+OPTIONS: num:nil html-style:nil
-:END:
 *** Algoritmul de caracterizarea a unui stat:
 1. Aprecierea hotarelor din punct de vedere economic, politic și strategic.
 2. Aprecierea conditiilor naturale si resurselor naturale.

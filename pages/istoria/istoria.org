@@ -2,7 +2,7 @@
 #+AUTHOR: Babin Ion
 #+LANGUAGE: ro
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../imagine.css" />
-#+OPTIONS: num:nil html-style:nil
+#+OPTIONS: num:nil toc:nil html-style:nil html-postamble:""
 
 * Mica unire
 ** Activitatea reformatoarea a lui Alexandru Ioan Cuza
